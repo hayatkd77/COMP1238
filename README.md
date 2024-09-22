@@ -1,7 +1,16 @@
 # Lab3-COMP1238
 
-**Lab3**
-
+## Number row characters
+- !
+- @
+- \#
+- $
+- %
+- ^
+- &
+- \*
+- (
+- )
 
 This is week 3 assignment.
 
