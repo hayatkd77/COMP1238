@@ -11,9 +11,14 @@
 - ) Clost Bracket
 
 # Links
-[wikipedia](https://en.wikipedia.org/)
+- [Wikipedia](https://en.wikipedia.org/)
+- [George Brown](https://learn.georgebrown.ca/)
 
-``` Py
+# Experiments
+- :smirk:
+- :sweat_smile:
+
+``` JSON
 {
   "firstName": "Hayat",
   "College": "George Brown",
