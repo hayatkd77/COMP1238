@@ -1,19 +1,17 @@
-# Lab3-COMP1238
+# Number row characters
+- ! Exclamtion mark
+- @ At sign
+- \# Hashtag
+- $ Dolar sign
+- % Percent
+- ^ Power sign
+- & And
+- \* Star
+- ( Open Bracket
+- ) Clost Bracket
 
-## Number row characters
-- !
-- @
-- \#
-- $
-- %
-- ^
-- &
-- \*
-- (
-- )
-
-This is week 3 assignment.
-
+# Links
+[wikipedia](https://en.wikipedia.org/)
 
 ``` Py
 {
