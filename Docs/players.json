@@ -16,10 +16,10 @@
         "Position": "Forward"
     },
     {
-        "Name": "Serena Wiliams",
-        "Age": 41,
-        "Sport": "Tennis",
-        "Position": "Player"
+        "Name": "Serena Wiliams" , // string
+        "Age": 41, // integer
+        "Sport": "Tennis", // string
+        "Position": "Player"  // string
     },
     {
         "Name": "Tom Brady",
