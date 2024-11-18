@@ -13,7 +13,7 @@
 # Links
 - [Wikipedia](https://en.wikipedia.org/)
 - [George Brown](https://learn.georgebrown.ca/)
-- [CLI commands](cli/cli.md)
+- [CLI commands](cli/ cli.md)
 # Experiments
 - :smirk:
 - :sweat_smile:
