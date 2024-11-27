@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Get inputs from the user
+echo "Enter value for a (non-negative integer):"
+read a
+echo "Enter value for b (non-negative integer):"
+read b
+echo "Enter value for c (non-negative integer):"
+read c
+echo "Enter the range for n (n1 and n2), with n1 <= n2:"
+read n1
+read n2
+
+# Validate inputs to ensure n1 <= n2 and all values are non-negative integers
+if [[ ! "$a" =~ ^[0-9]+$ ]] || [[ ! "$b" =~ ^[0-9]+$ ]] || [[ ! "$c" =~ ^[0-9]+$ ]] || [[ ! "$n1" =~ ^[0-9]+$ ]] || [[ ! "$n2" =~ ^[0-9]+$ ]] || [ "$n1" -gt "$n2" ]; then
+    echo "Invalid input. Please enter non-negative integers, and ensure n1 <= n2."
+    exit 1
+fi
+
+# Initialize the first and last terms
+first_term=0
+last_term=0
+
+# Print the terms in the specified range [n1, n2]
+echo "The terms of the sequence from n=$n1 to n=$n2 are:"
+for ((n=$n1; n<=$n2; n++))
+do
+    term=$((a * n**3 + b * n + c))
+    echo -n "$term"
+    
+    # Track the first and last term for product calculation
+    if [ $n -eq $n1 ]; then
+        first_term=$term
+    fi
+    if [ $n -eq $n2 ]; then
+        last_term=$term
+    fi
+    
+    # Print a comma unless it's the last term
+    if [ $n -lt $n2 ]; then
+        echo -n ", "
+    fi
+done
+echo
+
+# Calculate the product of the first and last term
+product=$((first_term * last_term))
+
+# Print the product
+echo "The product of the first and last term is: $product"
+
+# Check if the product is a multiple of 4
+if ((product % 4 == 0)); then
+    echo "$product is a multiple of 4."
+else
+    echo "$product is not a multiple of 4."
+fi
